@@ -1,4 +1,4 @@
-package Packable_task;
+package rvt.Packable_task;
 import java.util.ArrayList;
 
 public class Box implements Packable {

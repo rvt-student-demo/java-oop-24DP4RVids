@@ -1,4 +1,4 @@
-package studentu_registracija;
+package rvt.studentu_registracija;
 
 import java.util.List;
 
