@@ -1,20 +1,12 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
-public class Main {
+public class TodoList {
 
-    public static void main(String[] args) {
-        TodoList list = new TodoList();
-        Scanner scanner = new Scanner(System.in);
+    private ArrayList<String> tasks;
 
-        UserInterface ui = new UserInterface(list, scanner);
-        ui.start();
+    public TodoList() {
+        this.tasks = new ArrayList<>();
     }
-}
-
-class TodoList {
-
-    private ArrayList<String> tasks = new ArrayList<>();
 
     public void add(String task) {
         tasks.add(task);
@@ -28,42 +20,5 @@ class TodoList {
 
     public void remove(int number) {
         tasks.remove(number - 1);
-    }
-}
-
-class UserInterface {
-
-    private TodoList todoList;
-    private Scanner scanner;
-
-    public UserInterface(TodoList todoList, Scanner scanner) {
-        this.todoList = todoList;
-        this.scanner = scanner;
-    }
-
-    public void start() {
-        while (true) {
-            System.out.print("Command: ");
-            String command = scanner.nextLine();
-
-            if (command.equals("stop")) {
-                break;
-            }
-
-            if (command.equals("add")) {
-                System.out.print("To add: ");
-                todoList.add(scanner.nextLine());
-            }
-
-            if (command.equals("list")) {
-                todoList.print();
-            }
-
-            if (command.equals("remove")) {
-                System.out.print("Which one is removed? ");
-                int number = Integer.valueOf(scanner.nextLine());
-                todoList.remove(number);
-            }
-        }
     }
 }
