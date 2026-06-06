@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<kursi>
+
+    <kurss id="K101">
+        <nosaukums>Java pamati</nosaukums>
+        <apraksts>Ievads programmēšanā ar Java</apraksts>
+        <pasniedzejs>Jānis Bērziņš</pasniedzejs>
+        <ilgums>40</ilgums>
+        <studentuSkaits>25</studentuSkaits>
+        <limenis>iesācējs</limenis>
+    </kurss>
+
+    <kurss id="K102">
+        <nosaukums>Datubāzes</nosaukums>
+        <apraksts>SQL un datu bāzu pamati</apraksts>
+        <pasniedzejs>Ilze Kalniņa</pasniedzejs>
+        <ilgums>30</ilgums>
+        <studentuSkaits>18</studentuSkaits>
+        <limenis>vidējs</limenis>
+    </kurss>
+
+    <kurss id="K103">
+        <nosaukums>Web izstrāde</nosaukums>
+        <apraksts>HTML, CSS un JavaScript pamati</apraksts>
+        <pasniedzejs>Andris Ozols</pasniedzejs>
+        <ilgums>50</ilgums>
+        <studentuSkaits>22</studentuSkaits>
+        <limenis>vidējs</limenis>
+    </kurss>
+
+</kursi>
